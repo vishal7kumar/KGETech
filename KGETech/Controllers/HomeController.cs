@@ -13,7 +13,7 @@ namespace KGETech.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult ManageUser()
         {
             ViewBag.Message = "Your application description page.";
 

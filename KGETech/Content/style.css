@@ -1,0 +1,216 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700");
+
+@import url("https://fonts.googleapis.com/css?family=Courgette");
+
+.bg-mattBlackLight { background-color: #303337; }
+
+.bg-login { background-color: #cccccc; }
+
+.text-mattBlackLight { color: #303337; }
+
+.bg-mattBlackDark, .nav-link:hover, .nav-link.active { background-color: #212121; }
+
+.text-mattBlackDark { color: #212121; }
+
+.bg-mattGray { background-color: #878d8d; }
+
+.text-mattGray, body, .nav-link, .nav-link { color: #878d8d; }
+
+.bg-mattRed { background-color: #ec6271; }
+
+.text-mattRed, .nav-link:hover .icon,
+.nav-link:hover .text, .nav-link.active .icon,
+.nav-link.active .text { color: #ec6271; }
+
+* { font-family: 'Poppins', sans-serif; }
+
+body { }
+
+.wrapper { margin-top: 5rem; }
+
+.frame {
+    width: 33rem;
+    height: 28rem;
+}
+
+.wrapper .sideMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 3.5rem auto auto;
+    left: 0;
+    width: 13.5rem;
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: 2000;
+}
+
+.wrapper .content {
+    width: 100%;
+    margin-left: 0rem;
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+}
+
+.wrapper.active .sideMenu {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.sideMenu { background-color: #313131; }
+
+.nav-link {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: block;
+    white-space: nowrap;
+}
+
+.nav-link .icon {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 0.875rem;
+    vertical-align: middle;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav-link .text {
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.user-style {
+    color: #fff !important;
+    margin-left: 9.8rem;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-center {
+    place-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.user-style:hover {
+    color: #ec6271 !important;
+    background-color: #343a40;
+}
+
+.user-image {
+    width: 40px;
+    padding: 0;
+}
+
+.user-role {
+    color: #8d8d8d;
+    font-size: small;
+}
+
+.slimScrollBar { background: rgb(255, 255, 255) !important; }
+
+.card-01 {
+    background-color: #20c5cb;
+    color: #fff;
+}
+
+.card-02 {
+    background-color: #00b393;
+    color: #fff;
+}
+
+.card-03 {
+    background-color: #35a7d6;
+    color: #fff;
+}
+
+.card-04 {
+    background-color: #1672b9;
+    color: #fff;
+}
+
+.avatar-xs { width: 30px; }
+
+.footer-style {
+    font-size: x-small;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    background-color: #343a40;
+}
+
+.dropdown-style {
+    background-color: #343a40;
+    border: 0;
+}
+
+.dropdown-text-style {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.dropdown-text-style:hover {
+    color: #ec6271;
+    background-color: #212121;
+}
+
+.dropdown-toggle::after { margin-top: -1.45em; }
+
+.add-user:hover { background-color: transparent; }
+
+.copy:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .wrapper .sideMenu {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .wrapper .content { margin-left: 13.5rem; }
+
+    .wrapper.active .sideMenu { width: 5rem; }
+
+    .wrapper.active .sideMenu .nav-link { text-align: center; }
+
+    .wrapper.active .sideMenu .nav-link .icon {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .wrapper.active .sideMenu .nav-link .text { display: none; }
+
+    .wrapper.active .content { margin-left: 5rem; }
+
+    .wrapper .sideMenu { margin: 3.7rem auto auto; }
+
+    .align-end { text-align: end; }
+
+    .footer-style {
+        font-size: medium;
+        padding-left: 15rem;
+    }
+
+    .dropdown-style {
+        margin-left: 9.8rem;
+        width: 200px;
+    }
+
+    .dropdown-text-style { text-align: left; }
+}
